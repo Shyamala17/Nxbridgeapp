@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NourishX Core App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Logo + Tagline -->
+  <div class="logo-container">
+    <img src="nourishx-logo.png" alt="NourishX Logo" class="logo">
+    <h1>NOURISHX CORE</h1>
+    <p class="tagline">Smart Nutrition. Strong Lives.</p>
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#" onclick="loadScreen('home')">Home</a>
+    <a href="#" onclick="loadScreen('recipes')">Recipes</a>
+    <a href="#" onclick="loadScreen('dashboard')">Dashboard</a>
+    <a href="#" onclick="loadScreen('community')">Community</a>
+  </nav>
+
+  <!-- Dynamic Content -->
+  <div id="appContent" class="container">
+    <h2>Welcome to NourishX</h2>
+    <p>Empowering kitchens, workers, and families globally.</p>
+  </div>
+
+  <!-- Result Screen -->
+  <div class="result-screen" id="resultScreen">
+    <h2 id="resultMessage"></h2>
+    <button onclick="startNewPlan()">Start New Plan</button>
+  </div>
+
+  <footer>
+    NourishX © 2026 | Empowering Lives
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
